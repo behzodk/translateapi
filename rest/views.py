@@ -30,7 +30,7 @@ def translate(request):
         'output':{
             'status': '200',
             'actual_lang': actual_lang,
-            'translated': Translator().translate(text, src=from_lang, dest=to_lang).text
+            'translated': Translator().translate(text, src=from_lang, dest=to_lang).text,
             'pronunciation': Translator().translate(text, src=from_lang, dest=to_lang).pronunciation            
         }
         })
